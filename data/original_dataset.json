@@ -1,0 +1,390 @@
+{
+  "college_name": "Sagi Rama Krishna Raju Engineering College (Autonomous)",
+  "short_name": "SRKR",
+  "location": "Chinna Amiram, Bhimavaram, West Godavari District, Andhra Pradesh - 534204",
+  "website": "https://srkr.ac.in",
+  "intents": [
+    {
+      "tag": "college_history_profile",
+      "category": "College Profile",
+      "patterns": [
+        "Tell me about SRKR Engineering College",
+        "What is the history of SRKR?",
+        "When was SRKR established?",
+        "Who founded SRKR college?",
+        "Where is SRKR located?",
+        "Is SRKR autonomous or affiliated to JNTU?",
+        "What is SRKR accreditation and NAAC grade?",
+        "Give me an overview of SRKR Engineering College Bhimavaram",
+        "Can you share background information about SRKR?"
+      ],
+      "responses": [
+        "Sagi Rama Krishna Raju (SRKR) Engineering College was established in 1980 by late Sri Sagi Rama Krishna Raju garu. Located in Chinna Amiram, Bhimavaram, West Godavari District, Andhra Pradesh, it is an autonomous institution affiliated to JNTU Kakinada (JNTUK), approved by AICTE, and accredited by NAAC with an 'A+' Grade."
+      ]
+    },
+    {
+      "tag": "admissions_btech",
+      "category": "Admissions & Eligibility",
+      "patterns": [
+        "How can I get admission into B.Tech at SRKR?",
+        "What is the eligibility criteria for B.Tech admission?",
+        "What entrance exam is required for SRKR B.Tech?",
+        "How are Category A convenor seats allotted in SRKR?",
+        "Tell me about AP EAPCET admission in SRKR",
+        "How do I apply for B.Tech in SRKR College?",
+        "What is the management quota admission process for B.Tech?"
+      ],
+      "responses": [
+        "Admissions into B.Tech programmes at SRKR are conducted through two streams: 70% of seats are Category-A (Convenor Quota) filled via state counselling based on AP EAPCET (formerly EAMCET) rank; 30% of seats are Category-B (Management/NRI Quota) filled according to Andhra Pradesh State Council of Higher Education (APSCHE) guidelines. Candidates must have passed 10+2 with Mathematics, Physics, and Chemistry."
+      ]
+    },
+    {
+      "tag": "admissions_lateral_entry",
+      "category": "Admissions & Eligibility",
+      "patterns": [
+        "Does SRKR offer lateral entry admission?",
+        "How can diploma holders join 2nd year B.Tech at SRKR?",
+        "What is the admission procedure through AP ECET?",
+        "Can polytechnic diploma students join SRKR?",
+        "Tell me about ECET counselling for SRKR Engineering College"
+      ],
+      "responses": [
+        "Yes, diploma holders and B.Sc graduates can gain direct lateral entry admission into the 2nd year (3rd semester) of B.Tech at SRKR via the AP ECET (Engineering Common Entrance Test) centralized counselling conducted by APSCHE."
+      ]
+    },
+    {
+      "tag": "admissions_pg_mtech_mca",
+      "category": "Admissions & Eligibility",
+      "patterns": [
+        "What are the PG programmes offered at SRKR?",
+        "How can I get admission into M.Tech at SRKR?",
+        "Does SRKR have an MCA course?",
+        "What exam is required for M.Tech and MCA admission?",
+        "Tell me about AP PGECET and AP ICET admissions at SRKR",
+        "Is GATE score accepted for M.Tech in SRKR?"
+      ],
+      "responses": [
+        "SRKR offers M.Tech in specialized engineering disciplines and Master of Computer Applications (MCA). M.Tech admissions are based on GATE / AP PGECET ranks, while MCA admissions are conducted through AP ICET counselling by APSCHE."
+      ]
+    },
+    {
+      "tag": "departments_and_branches",
+      "category": "Departments & Programmes",
+      "patterns": [
+        "What courses are available at SRKR?",
+        "Which engineering branches does SRKR offer?",
+        "Tell me about the programmes offered by SRKR",
+        "What B.Tech branches are there in SRKR College?",
+        "List all undergraduate departments in SRKR",
+        "Which engineering degrees can I study at SRKR Bhimavaram?"
+      ],
+      "responses": [
+        "SRKR offers undergraduate B.Tech programmes in: Computer Science & Engineering (CSE), Artificial Intelligence & Data Science (AI&DS), Computer Science & Business Systems (CSBS), Computer Science & Design (CSD), Information Technology (IT), Electronics & Communication Engineering (ECE), Electrical & Electronics Engineering (EEE), Mechanical Engineering (ME), and Civil Engineering (CE)."
+      ]
+    },
+    {
+      "tag": "computer_science_departments",
+      "category": "Departments & Programmes",
+      "patterns": [
+        "Tell me about Computer Science at SRKR",
+        "Does SRKR have AI and Data Science branch?",
+        "What computing courses are offered by SRKR?",
+        "Is there CSBS or CSD in SRKR?",
+        "Tell me about IT department at SRKR College",
+        "How is the CSE department at SRKR Bhimavaram?"
+      ],
+      "responses": [
+        "SRKR has extensive computing departments including CSE, AI&DS (Artificial Intelligence & Data Science), CSBS (Computer Science & Business Systems partnered with TCS), CSD (Computer Science & Design), and Information Technology (IT), equipped with modern labs, AICTE IDEA Lab, and high-performance computing centers."
+      ]
+    },
+    {
+      "tag": "circuits_and_core_departments",
+      "category": "Departments & Programmes",
+      "patterns": [
+        "Tell me about ECE and EEE departments at SRKR",
+        "Does SRKR offer Mechanical Engineering?",
+        "Is Civil Engineering available at SRKR?",
+        "What core engineering branches are offered?",
+        "Tell me about electronics and electrical branch in SRKR",
+        "How are the Mechanical and Civil departments at SRKR?"
+      ],
+      "responses": [
+        "SRKR features long-standing core and circuit branches including Electronics & Communication Engineering (ECE), Electrical & Electronics Engineering (EEE), Mechanical Engineering (ME), and Civil Engineering (CE), all recognized for strong laboratory infrastructure, senior faculty, and NBA accreditation history."
+      ]
+    },
+    {
+      "tag": "curriculum_and_syllabus",
+      "category": "Courses & Syllabus",
+      "patterns": [
+        "What curriculum does SRKR follow?",
+        "Is the syllabus updated as per industry needs?",
+        "Does SRKR follow Choice Based Credit System CBCS?",
+        "Where can I find the B.Tech academic syllabus?",
+        "Does SRKR offer Honors and Minor degrees?",
+        "Tell me about academic regulations at SRKR"
+      ],
+      "responses": [
+        "As an autonomous college, SRKR follows an industry-aligned Choice Based Credit System (CBCS) curriculum modelled on AICTE guidelines and JNTUK regulations. It also offers Honors and Minor degree options in emerging technologies alongside regular degree courses."
+      ]
+    },
+    {
+      "tag": "examinations_and_grading",
+      "category": "Examinations & Academics",
+      "patterns": [
+        "How are examinations conducted at SRKR?",
+        "Tell me about the grading system at SRKR",
+        "How does continuous internal evaluation CIE work?",
+        "Where are semester results published?",
+        "What is the CGPA calculation method at SRKR?",
+        "Tell me about autonomous exams at SRKR"
+      ],
+      "responses": [
+        "SRKR features an independent Autonomous Examination Cell. Assessment consists of Continuous Internal Evaluation (CIE) and Semester End Examinations (SEE). Results and grade cards (SGPA/CGPA on a 10-point scale) are published online on the official exam portal."
+      ]
+    },
+    {
+      "tag": "fees_and_reimbursement",
+      "category": "Fees & Scholarships",
+      "patterns": [
+        "What is the fee structure for B.Tech at SRKR?",
+        "How much are tuition fees in SRKR College?",
+        "Is Andhra Pradesh fee reimbursement applicable at SRKR?",
+        "Does Jagananna Vidya Deevena JVD cover SRKR fees?",
+        "Tell me about college fees at SRKR",
+        "How much should convenor quota students pay?"
+      ],
+      "responses": [
+        "Tuition fees at SRKR are fixed as per the Andhra Pradesh Higher Education Regulatory and Monitoring Commission (APHERMC) norms. Eligible Andhra Pradesh students admitted under Category-A convenor quota can avail government schemes such as Jagananna Vidya Deevena (JVD) for tuition fee reimbursement."
+      ]
+    },
+    {
+      "tag": "scholarships",
+      "category": "Fees & Scholarships",
+      "patterns": [
+        "What scholarships are available at SRKR?",
+        "Can I get financial assistance or merit scholarships at SRKR?",
+        "Are government scholarships accepted at SRKR?",
+        "Does SRKR provide financial aid for underprivileged students?",
+        "Tell me about scholarship schemes for SRKR students"
+      ],
+      "responses": [
+        "SRKR students can access Andhra Pradesh State Welfare Scholarships, National Scholarship Portal (NSP) schemes, Pragati & Saksham scholarships for girl students and differently-abled students, as well as alumni endowment merit awards for top academic performers."
+      ]
+    },
+    {
+      "tag": "hostels_and_accommodation",
+      "category": "Hostels & Accommodation",
+      "patterns": [
+        "Does SRKR provide hostel facilities?",
+        "Are there separate hostels for boys and girls at SRKR?",
+        "What amenities are available in SRKR hostels?",
+        "Tell me about the hostel mess food and Wi-Fi at SRKR",
+        "Where do students stay during studies at SRKR?",
+        "Is accommodation safe and secure for girls at SRKR?"
+      ],
+      "responses": [
+        "Yes, SRKR provides separate on-campus and near-campus hostel accommodation for both boys and girls. Facilities include 24/7 security with CCTV surveillance, high-speed Wi-Fi, RO purified drinking water, hot water facilities, hygienic dining mess, and indoor study halls."
+      ]
+    },
+    {
+      "tag": "transportation",
+      "category": "Transportation",
+      "patterns": [
+        "Does SRKR have college bus transport facilities?",
+        "What bus routes are operated by SRKR College?",
+        "How can day scholars travel to SRKR Bhimavaram?",
+        "Are college buses available from Tanuku, Palakollu, or Narsapur?",
+        "Tell me about transportation services at SRKR"
+      ],
+      "responses": [
+        "SRKR operates a comprehensive fleet of college buses connecting Bhimavaram with neighboring towns and villages, including Tanuku, Palakollu, Narasapuram, Tadepalligudem, Akividu, Maruteru, and surrounding rural routes for students and staff."
+      ]
+    },
+    {
+      "tag": "placements",
+      "category": "Placements & Internships",
+      "patterns": [
+        "How are placements at SRKR Engineering College?",
+        "What companies recruit from SRKR Bhimavaram?",
+        "What is the highest and average salary package at SRKR?",
+        "Tell me about campus placements and recruiters at SRKR",
+        "Does SRKR have a training and placement cell?",
+        "How many placement offers does SRKR get each year?"
+      ],
+      "responses": [
+        "SRKR has an active Training and Placement Cell (T&P). Over 70+ leading companies visit annually, including TCS, Infosys, Wipro, Cognizant, Capgemini, Accenture, Tech Mahindra, and Amazon. The college routinely records over 1,200+ job offers each season with top packages exceeding 20+ LPA and average packages around 4.5 to 5.5 LPA."
+      ]
+    },
+    {
+      "tag": "internships",
+      "category": "Placements & Internships",
+      "patterns": [
+        "Are internship opportunities provided at SRKR?",
+        "Does SRKR support summer and semester internships?",
+        "Can students do industrial training at SRKR?",
+        "Does SRKR have tie-ups with AICTE internships or companies?"
+      ],
+      "responses": [
+        "Yes, SRKR encourages and facilitates mandatory semester-long and summer internships through partnerships with industries, AICTE internship portals, and research organizations, giving students practical engineering exposure before graduation."
+      ]
+    },
+    {
+      "tag": "faculty_and_mentorship",
+      "category": "Faculty & Contacts",
+      "patterns": [
+        "How is the faculty at SRKR Engineering College?",
+        "Are professors well qualified and experienced at SRKR?",
+        "Does SRKR have Ph.D holder professors?",
+        "Tell me about student faculty mentorship at SRKR",
+        "Who teaches engineering subjects at SRKR?"
+      ],
+      "responses": [
+        "SRKR boasts an experienced faculty cohort comprising over 100+ doctorate (Ph.D.) holders and senior academic mentors. A dedicated proctoring and student-faculty mentorship system guides students throughout their academic and personal development."
+      ]
+    },
+    {
+      "tag": "laboratories_and_facilities",
+      "category": "Laboratories & Facilities",
+      "patterns": [
+        "What lab facilities are available at SRKR?",
+        "Does SRKR have an AICTE IDEA Lab?",
+        "Tell me about computer labs and research centers at SRKR",
+        "What infrastructure and equipment does SRKR have?",
+        "Are practical labs well-equipped at SRKR?"
+      ],
+      "responses": [
+        "SRKR features state-of-the-art laboratories in every department, including an AICTE IDEA Lab (Ideation, Design, Evaluation, Application), advanced CNC machines, robotics center, specialized IoT labs, software computing suites, and campus-wide high-speed fiber internet."
+      ]
+    },
+    {
+      "tag": "central_library",
+      "category": "Library",
+      "patterns": [
+        "Tell me about the library at SRKR Engineering College",
+        "How many books and journals are in SRKR library?",
+        "Does SRKR have a digital library?",
+        "What are the library timings and facilities at SRKR?",
+        "Can students access IEEE and NPTEL in SRKR library?"
+      ],
+      "responses": [
+        "The Sri SRK Raju Central Library at SRKR contains over 1,00,000+ volumes, thousands of titles, national and international journals, DELNET, and an air-conditioned Digital Library equipped with IEEE Xplore, ScienceDirect, and NPTEL e-learning resources."
+      ]
+    },
+    {
+      "tag": "clubs_and_extracurricular",
+      "category": "Clubs & Extracurricular",
+      "patterns": [
+        "What student clubs are active at SRKR?",
+        "Are there technical and cultural clubs in SRKR?",
+        "Tell me about the Student Activity Center SAC at SRKR",
+        "Does SRKR have IEEE, CSI, or ISTE student branches?",
+        "Can I join NSS or NCC at SRKR College?"
+      ],
+      "responses": [
+        "SRKR has a vibrant campus culture managed by the Student Activity Center (SAC). Active bodies include IEEE Student Branch, CSI Chapter, ISTE, Coding clubs, Rotaract Club, NSS (National Service Scheme), NCC, literary associations, and photography/cultural clubs."
+      ]
+    },
+    {
+      "tag": "sports_and_events",
+      "category": "Sports & Events",
+      "patterns": [
+        "What sports facilities are available at SRKR?",
+        "Does SRKR have grounds for cricket and football?",
+        "Tell me about annual events and cultural fests at SRKR",
+        "Does SRKR celebrate Sankranti and College Annual Day?",
+        "Are there gym and indoor sports at SRKR?"
+      ],
+      "responses": [
+        "SRKR provides extensive sports infrastructure including large open grounds for cricket, football, athletic tracks, basketball and volleyball courts, indoor badminton arenas, and a modern gymnasium. Annual highlights include College Day, National Tech Fests, Sankranti celebrations, and Inter-collegiate tournaments."
+      ]
+    },
+    {
+      "tag": "campus_information",
+      "category": "Campus Information",
+      "patterns": [
+        "How big is the SRKR campus?",
+        "What are the facilities on the SRKR campus?",
+        "Is there a bank, ATM, or canteen on SRKR campus?",
+        "Tell me about the campus environment at SRKR Bhimavaram",
+        "Where is the campus located in Bhimavaram?"
+      ],
+      "responses": [
+        "Spread across a serene, green 30+ acre campus in Chinna Amiram, Bhimavaram, SRKR features modern multi-storeyed academic blocks, an open-air auditorium, a multi-cuisine hygienic student canteen, bank extension counter, ATM, health center, and lush gardens."
+      ]
+    },
+    {
+      "tag": "contact_and_office",
+      "category": "College Contact",
+      "patterns": [
+        "What is the contact number of SRKR Engineering College?",
+        "How can I contact SRKR admissions office?",
+        "What is the email address of SRKR College?",
+        "What is the postal address of SRKR Engineering College?",
+        "What is the official website of SRKR College Bhimavaram?"
+      ],
+      "responses": [
+        "SRKR Engineering College is located at Chinna Amiram, Bhimavaram, West Godavari District, Andhra Pradesh - 534204. Official Contact: 08816-223332 / 222748. Email: principal@srkr.ac.in. Official Website: https://srkr.ac.in."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "category": "General Interaction",
+      "patterns": [
+        "Hello",
+        "Hi there",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hey",
+        "Greetings",
+        "Namaste"
+      ],
+      "responses": [
+        "Hello! Welcome to SRKR Engineering College (Autonomous), Bhimavaram. How may I assist prospective students, parents, current students, or visitors today?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "category": "General Interaction",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Have a good day",
+        "Exit",
+        "Thank you, bye"
+      ],
+      "responses": [
+        "Goodbye! Thank you for inquiring about SRKR Engineering College, Bhimavaram. Feel free to return if you have more questions. Have a wonderful day!"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "category": "General Interaction",
+      "patterns": [
+        "Thank you",
+        "Thanks a lot",
+        "Thank you so much",
+        "I appreciate your help",
+        "That was very helpful"
+      ],
+      "responses": [
+        "You are welcome! I'm happy to help you with factual information regarding SRKR Engineering College, Bhimavaram."
+      ]
+    },
+    {
+      "tag": "bot_identity",
+      "category": "General Interaction",
+      "patterns": [
+        "Who are you?",
+        "What can you do?",
+        "Tell me about yourself",
+        "Are you a college chatbot?",
+        "What is your purpose?"
+      ],
+      "responses": [
+        "I am the SRKR Engineering College Question Answering Chatbot. I assist prospective students, current students, parents, faculty, alumni, and visitors with factual queries regarding SRKR's admissions, departments, placements, curriculum, campus life, hostels, and contact details."
+      ]
+    }
+  ]
+}

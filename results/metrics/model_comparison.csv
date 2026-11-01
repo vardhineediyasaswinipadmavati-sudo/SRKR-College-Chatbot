@@ -1,0 +1,6 @@
+Model Name,Architecture Type,Val Accuracy,Test Accuracy,Macro Precision,Macro Recall,Macro F1-Score,Train Time (s),Inference Time (ms),Epochs Trained
+SimpleRNN,Deep Learning,0.0833,0.0,0.0,0.0,0.0,14.27,171.63,13
+LSTM,Deep Learning,0.0417,0.0,0.0,0.0,0.0,24.43,166.66,33
+GRU,Deep Learning,0.0,0.0833,0.0052,0.0625,0.0096,11.5,163.96,13
+BiLSTM,Deep Learning,0.0,0.0833,0.0051,0.0588,0.0094,21.64,144.33,13
+TF-IDF + Logistic Regression,Baseline ML,0.1667,0.25,0.1579,0.1579,0.1491,0.14,2.0,0

@@ -1,0 +1,62 @@
+[
+  {
+    "Model Name":"SimpleRNN",
+    "Architecture Type":"Deep Learning",
+    "Val Accuracy":0.0833,
+    "Test Accuracy":0.0,
+    "Macro Precision":0.0,
+    "Macro Recall":0.0,
+    "Macro F1-Score":0.0,
+    "Train Time (s)":14.27,
+    "Inference Time (ms)":171.63,
+    "Epochs Trained":13
+  },
+  {
+    "Model Name":"LSTM",
+    "Architecture Type":"Deep Learning",
+    "Val Accuracy":0.0417,
+    "Test Accuracy":0.0,
+    "Macro Precision":0.0,
+    "Macro Recall":0.0,
+    "Macro F1-Score":0.0,
+    "Train Time (s)":24.43,
+    "Inference Time (ms)":166.66,
+    "Epochs Trained":33
+  },
+  {
+    "Model Name":"GRU",
+    "Architecture Type":"Deep Learning",
+    "Val Accuracy":0.0,
+    "Test Accuracy":0.0833,
+    "Macro Precision":0.0052,
+    "Macro Recall":0.0625,
+    "Macro F1-Score":0.0096,
+    "Train Time (s)":11.5,
+    "Inference Time (ms)":163.96,
+    "Epochs Trained":13
+  },
+  {
+    "Model Name":"BiLSTM",
+    "Architecture Type":"Deep Learning",
+    "Val Accuracy":0.0,
+    "Test Accuracy":0.0833,
+    "Macro Precision":0.0051,
+    "Macro Recall":0.0588,
+    "Macro F1-Score":0.0094,
+    "Train Time (s)":21.64,
+    "Inference Time (ms)":144.33,
+    "Epochs Trained":13
+  },
+  {
+    "Model Name":"TF-IDF + Logistic Regression",
+    "Architecture Type":"Baseline ML",
+    "Val Accuracy":0.1667,
+    "Test Accuracy":0.25,
+    "Macro Precision":0.1579,
+    "Macro Recall":0.1579,
+    "Macro F1-Score":0.1491,
+    "Train Time (s)":0.14,
+    "Inference Time (ms)":2.0,
+    "Epochs Trained":0
+  }
+]

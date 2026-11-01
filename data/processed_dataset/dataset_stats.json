@@ -1,0 +1,12 @@
+{
+  "total_intents": 34,
+  "total_patterns": 155,
+  "total_responses": 34,
+  "separate_kb_records": 67,
+  "duplicates_removed": 0,
+  "empty_records_removed": 23,
+  "vocabulary_size": 255,
+  "train_samples": 107,
+  "val_samples": 24,
+  "test_samples": 24
+}

@@ -1,0 +1,2539 @@
+{
+  "dataset_name": "SRKR Comprehensive College Q&A Chatbot Dataset",
+  "version": "2.0-expanded-source-grounded",
+  "generated_on": "2026-11-01",
+  "institution": "Sagi Rama Krishnam Raju Engineering College (SRKR Engineering College)",
+  "scope": "All audiences: prospective students, current students, parents, faculty, alumni and campus visitors.",
+  "language": "English",
+  "purpose": "Intent classification for SimpleRNN, LSTM, GRU and Bi-LSTM, connected to a source-linked college knowledge base.",
+  "important_limitations": [
+    "This is a source-grounded foundation dataset, not a claim that every SRKR policy, subject, classroom, staff member or service has been exhaustively captured.",
+    "The syllabus directory has been catalogued by regulation and programme scope. Individual syllabus PDFs still need batch extraction before subject-by-subject and semester-by-semester answers can be considered comprehensive.",
+    "The public campus map lists selected mapped features only. It is not an official indoor navigation map; never invent block/room mappings.",
+    "Fees, admission rules, cut-offs, contacts, placement statistics, routes, schedules and staff assignments can change. Retrieve or verify these from live official pages before answering."
+  ],
+  "sources": {
+    "college_profile": "https://www.srkrec.ac.in/college-profile/",
+    "programmes": "https://www.srkrec.ac.in/programmes/",
+    "syllabus_directory": "https://www.srkrec.ac.in/syllabus/",
+    "leadership": "https://www.srkrec.ac.in/leadership/",
+    "hostels": "https://www.srkrec.ac.in/hostels/",
+    "library": "https://www.srkrec.ac.in/library/",
+    "transport": "https://www.srkrec.ac.in/transportation/",
+    "placements_team": "https://www.srkrec.ac.in/placements-team/",
+    "campus_map": "https://mapcarta.com/W851081636"
+  },
+  "programmes": {
+    "undergraduate": [
+      {
+        "code": "AIDS",
+        "name": "Artificial Intelligence and Data Science",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "AIML",
+        "name": "Artificial Intelligence and Machine Learning",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CE",
+        "name": "Civil Engineering",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CSBS",
+        "name": "Computer Science and Business Systems",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CSD",
+        "name": "Computer Science and Design",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CSE",
+        "name": "Computer Science and Engineering",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "ECE",
+        "name": "Electronics and Communication Engineering",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "EEE",
+        "name": "Electrical and Electronics Engineering",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "IT",
+        "name": "Information Technology",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "ME",
+        "name": "Mechanical Engineering",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CIC",
+        "name": "CSE - IoT and Cyber Security",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "CSIT",
+        "name": "Computer Science and Information Technology",
+        "degree": "B.Tech"
+      },
+      {
+        "code": "BBA",
+        "name": "Bachelor of Business Administration",
+        "degree": "BBA"
+      }
+    ],
+    "postgraduate_specializations": [
+      "CAD/CAM",
+      "Structural Engineering",
+      "Communication Systems",
+      "Computer Science and Technology",
+      "Information Technology",
+      "Power Systems and Automation",
+      "Electric Vehicle Technology",
+      "Artificial Intelligence"
+    ],
+    "phd_areas": [
+      "Civil Engineering",
+      "Computer Science and Engineering",
+      "Electronics and Communication Engineering",
+      "Electrical and Electronics Engineering",
+      "Information Technology",
+      "Mechanical Engineering",
+      "Mathematics",
+      "Chemistry",
+      "Physics",
+      "English"
+    ]
+  },
+  "syllabus_catalogue": {
+    "directory_url": "https://www.srkrec.ac.in/syllabus/",
+    "note": "This is a directory index, not a claim that every syllabus PDF has been extracted into subject-level records. Always ask for the student's regulation, programme/branch, year and semester before answering exact subject or course-structure questions.",
+    "regulations": [
+      {
+        "regulation": "R26",
+        "listed_scope": "B.Tech I Year",
+        "branches": [
+          "AIDS",
+          "AIML",
+          "CSIT",
+          "CE",
+          "CSBS",
+          "CSD",
+          "CSE",
+          "CIC",
+          "ECE",
+          "EEE",
+          "IT",
+          "ME"
+        ],
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R25",
+        "listed_scope": "M.Tech",
+        "specializations": [
+          "Computer Science and Technology",
+          "Communication Systems",
+          "Power Systems and Automation",
+          "CAD/CAM",
+          "Information Technology",
+          "Structural Engineering"
+        ],
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R24",
+        "listed_scope": "BBA I, II and III Year",
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R23",
+        "listed_scope": "B.Tech I, II, III and IV Year",
+        "branches": [
+          "AIDS",
+          "AIML",
+          "CSIT",
+          "CE",
+          "CSBS",
+          "CSD",
+          "CSE",
+          "CIC",
+          "ECE",
+          "EEE",
+          "IT",
+          "ME"
+        ],
+        "additional_resources": [
+          "Open Electives I-IV",
+          "Honours",
+          "Minors",
+          "Model Papers"
+        ],
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R20",
+        "listed_scope": "B.Tech I, II, III and IV Year",
+        "branches": [
+          "AIDS",
+          "AIML",
+          "CE",
+          "CSBS",
+          "CSD",
+          "CSE",
+          "CIC",
+          "ECE",
+          "EEE",
+          "IT",
+          "ME"
+        ],
+        "additional_resources": [
+          "Open Electives",
+          "Honours",
+          "Minors",
+          "Model Papers"
+        ],
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R19",
+        "listed_scope": "B.Tech and M.Tech resources",
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R17",
+        "listed_scope": "B.Tech and M.Tech resources",
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      },
+      {
+        "regulation": "R16",
+        "listed_scope": "B.Tech and M.Tech resources",
+        "resources": [
+          "syllabus",
+          "model papers"
+        ]
+      }
+    ],
+    "important_rule": "Do not assume the newest regulation applies to every student. The student's admission batch and official regulation determine the applicable syllabus."
+  },
+  "knowledge_base": [
+    {
+      "id": "college_identity",
+      "category": "college",
+      "title": "College identity and location",
+      "answer": "Sagi Rama Krishnam Raju Engineering College (SRKR Engineering College) is located at SRKR Marg, China Amiram, Bhimavaram, Andhra Pradesh, India - 534204. The college profile states that it was founded in 1980. The official site describes it as an autonomous institution and lists NAAC A+ accreditation. Confirm current accreditation/programme status on the official website before relying on time-sensitive claims.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/college-profile/",
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "college",
+        "identity",
+        "and",
+        "location"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "campus_overview",
+      "category": "campus",
+      "title": "Campus overview",
+      "answer": "The college profile describes a 30-acre campus in Bhimavaram. The external Mapcarta/OpenStreetMap map identifies the college boundary and nearby mapped features including the Ground/Pitch, SRKR Pond, CIVIL DEPARTMENT, N Block, Silver Jubilee Block and WET Centre. The map is not a complete official building directory and does not establish classroom numbers, internal corridors or exact room locations.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/college-profile/",
+        "https://mapcarta.com/W851081636"
+      ],
+      "confidence": "verified_with_map_limit",
+      "aliases": [],
+      "keywords": [
+        "campus",
+        "overview"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "campus_map_locations",
+      "category": "campus_navigation",
+      "title": "Map-listed campus locations",
+      "answer": "The campus map currently labels CIVIL DEPARTMENT, N Block, Silver Jubilee Block, WET Centre, Ground/Pitch and SRKR Pond. If asked for a location not shown on the map, say that the public map does not provide enough verified detail and direct the user to the college office or the relevant department. Never invent a block-to-department mapping or room number.",
+      "source_urls": [
+        "https://mapcarta.com/W851081636"
+      ],
+      "confidence": "map_listed_only",
+      "aliases": [],
+      "keywords": [
+        "map-listed",
+        "campus",
+        "locations",
+        "campus_navigation"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "programmes_ug",
+      "category": "academics",
+      "title": "Undergraduate programmes",
+      "answer": "The official programmes page lists undergraduate offerings in AI & Data Science, AI & ML, Civil Engineering, CS & Business System, CS & Design, CSE, ECE, EEE, IT, Mechanical, CIC, CS & IT, and BBA. Programme names and availability can change; check the current official programmes/admissions pages for the active intake.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/programmes/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "undergraduate",
+        "programmes",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "programmes_pg",
+      "category": "academics",
+      "title": "Postgraduate programmes",
+      "answer": "The official programmes page lists postgraduate specializations including CAD/CAM, Structural Engineering, Communication Systems, Computer Science and Technology, Information Technology, Power Systems and Automation, Electric Vehicle Technology, and Artificial Intelligence. Confirm the current intake and specialization availability with the official admissions page.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/programmes/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "postgraduate",
+        "programmes",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "programmes_phd",
+      "category": "academics",
+      "title": "PhD programmes",
+      "answer": "The official programmes page lists PhD areas in Civil Engineering, CSE, ECE, EEE, IT, Mechanical Engineering, Mathematics, Chemistry, Physics and English. Contact the college research office for current admission notifications, eligibility and supervisor availability.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/programmes/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "phd",
+        "programmes",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "syllabus_regulations",
+      "category": "academics",
+      "title": "Syllabus and regulations directory",
+      "answer": "SRKR's official syllabus directory is organized by regulation. It currently lists R26 B.Tech first-year syllabus/model papers across the listed branches; R25 M.Tech specialization syllabus/model papers; R24 BBA first, second and third year; R23 B.Tech first through fourth year across the listed branches plus open electives, Honours, Minors and model papers; R20 B.Tech year-wise resources; and older R19, R17 and R16 resources. Students must select the regulation applicable to their admission batch.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "syllabus",
+        "and",
+        "regulations",
+        "directory",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "syllabus_lookup_requirements",
+      "category": "academics",
+      "title": "Information needed for an exact syllabus answer",
+      "answer": "To identify the correct subject list or syllabus, the chatbot should ask for four details: degree/programme, branch or specialization, regulation (for example R23 or R20), and year/semester. If the user does not know the regulation, ask for their admission year and advise them to verify the assigned regulation from college records. Do not infer a regulation from the current year.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "information",
+        "needed",
+        "for",
+        "an",
+        "exact",
+        "syllabus",
+        "answer",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "model_papers",
+      "category": "examinations",
+      "title": "Model question papers",
+      "answer": "The official syllabus directory provides model-paper links alongside many regulation, branch and year syllabus entries. The chatbot should direct users to the matching regulation, branch and year on the official directory rather than supplying an unrelated paper.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "model",
+        "question",
+        "papers",
+        "examinations"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "open_electives_honours_minors",
+      "category": "academics",
+      "title": "Open electives, Honours and Minors",
+      "answer": "The R23 directory includes Open Electives I-IV and Honours/Minor resources. The R20 directory also lists Open Electives, Honours and Minors. Availability and eligibility should be checked against the student's own regulation and official academic instructions.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "open",
+        "electives",
+        "honours",
+        "and",
+        "minors",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "departments_and_programme_coordinators",
+      "category": "departments",
+      "title": "Departments and programme coordination",
+      "answer": "The official leadership page lists department heads and programme coordinators for several departments/programmes, including Civil, CSE, ECE, EEE, Mechanical, IT, Management Studies, Mathematics, Chemistry, Physics, English, CS & IT, AI & ML, AI & Data Science, CS & Business System, CSE-IoT & Cyber Security and CS & Design. Names and assignments may change; use the live leadership page for current contacts.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "departments",
+        "and",
+        "programme",
+        "coordination"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "hostel_overview",
+      "category": "student_life",
+      "title": "Hostel facilities",
+      "answer": "SRKR's official hostel page describes on-campus hostel accommodation, wardens, student support and medical/essential assistance. It mentions access to gymnasium, playground and indoor gaming facilities, and states that the college follows a no-ragging ethos. Room availability, fees, rules, mess timings and admission procedures should be confirmed with the hostel office.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/hostels/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "hostel",
+        "facilities",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "hostel_contacts",
+      "category": "contacts",
+      "title": "Hostel office contacts",
+      "answer": "The official hostel page lists the Chief Warden contact as 8074874235, Boys Hostel as 9492123311, Girls Hostel as 7995383711 and email hostels@srkrec.ac.in. Since contact details can change, verify on the live hostel page before use.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/hostels/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "hostel",
+        "office",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "library",
+      "category": "student_life",
+      "title": "Central library",
+      "answer": "The official library page describes a 4,160-square-metre automated library with RFID technology, more than 24,000 titles, about 1.19 lakh volumes, 6,458 e-journals and 110 print journals. Facilities include a Digital Learning Centre with 252 systems, e-learning, reading room, book bank and reference section. The page lists e-resources and databases including ScienceDirect, ASCE Library, IEEE Xplore, Springer, DELNET, J-Gate, N-LIST, NPTEL and Knimbus. Some e-journals are stated to be accessible through the campus LAN.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/library/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "central",
+        "library",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "library_opac",
+      "category": "student_life",
+      "title": "Library OPAC",
+      "answer": "The library page links to an OPAC through which users can search the catalogue and check real-time book and asset availability. Use the OPAC link on the official library page.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/library/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "library",
+        "opac",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "transport",
+      "category": "student_life",
+      "title": "College transportation",
+      "answer": "The official transportation page says college buses connect students and staff from Bhimavaram and surrounding towns, including rural and urban areas. It describes multiple routes, high-capacity buses, comfortable seating, safety and punctuality. It does not provide a static complete route/time table in the extracted page content, so users should contact the Transport Section for current routes, stops, fees and timings.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/transportation/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "college",
+        "transportation",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "transport_contacts",
+      "category": "contacts",
+      "title": "Transport office contact",
+      "answer": "The official transportation page lists the Transport Section in the Admin Block, SRKR Engineering College, Bhimavaram; phone +91 884 222 6666; email transport@srkrec.ac.in. Verify the live page for updates.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/transportation/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "transport",
+        "office",
+        "contact",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "placements_overview",
+      "category": "careers",
+      "title": "Training and placement cell",
+      "answer": "SRKR has a Training & Placement team with officers, faculty coordinators and department representatives. The official team page publishes placement statistics, recruiter information and department-wise coordinators. Placement percentages, offers and salary figures are batch-specific and must be quoted with their reporting year; they are not guarantees for an individual student.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/placements-team/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "training",
+        "and",
+        "placement",
+        "cell",
+        "careers"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "placements_contact",
+      "category": "contacts",
+      "title": "Placement cell contact",
+      "answer": "The official placements team page lists the Dean of Placements & Industry Relations contact as krsn@srkrec.ac.in and 9704195376. It lists the Training & Placement office at U Block, SRKR Engineering College, Bhimavaram - 534204, with office hours Monday-Saturday, 9:00 AM-5:00 PM. Verify the live page before contacting.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/placements-team/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "placement",
+        "cell",
+        "contact",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "placement_statistics",
+      "category": "careers",
+      "title": "Published placement statistics",
+      "answer": "The current official placements team page displays 87.3% placements for 2025-26, a 19.00 LPA top package attributed to AT&T, 79 on-campus recruiters and 15 industry partners. Treat these as the website's published figures for the stated reporting period, not as guaranteed outcomes or lifetime college averages. Recheck the page before answering because statistics change.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/placements-team/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "published",
+        "placement",
+        "statistics",
+        "careers"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "library_contact",
+      "category": "contacts",
+      "title": "General college contact",
+      "answer": "The official website footer lists +91 9848823332, info@srkrec.ac.in and the address SRKR Marg, China Amiram, Bhimavaram, Andhra Pradesh, India - 534204. For a specific service, prefer its dedicated office contact when published.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "general",
+        "college",
+        "contact",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "ece_labs",
+      "category": "departments",
+      "title": "ECE laboratory facilities",
+      "answer": "The official ECE facilities page describes eleven laboratories. Named examples include Electronic Devices & Circuits, Digital Electronics, Analog Circuits, Microprocessors & Microcontrollers, Communication, VLSI Design, Digital Signal Processing, Microwave & Antennas, IoT, Project & Innovation, and Skill Development labs, along with a departmental library. This information is specific to ECE and should not be generalized to other departments.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/departments/ece/facilities/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "ece",
+        "laboratory",
+        "facilities",
+        "departments"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "admissions",
+      "category": "admissions",
+      "title": "Admissions information",
+      "answer": "The official website provides separate Admission Procedure/Overview, Admission Brochure, Fee Structure and EAPCET Rank Cut-off pages. Admission routes, eligibility, seat categories, documents, fees and cut-offs can change by academic year. The chatbot should link to the current official page and avoid promising admission or quoting old cut-offs as current.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/admission-overview/",
+        "https://www.srkrec.ac.in/admission-procedure/",
+        "https://www.srkrec.ac.in/fee-structure/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "admissions",
+        "information"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "examinations",
+      "category": "examinations",
+      "title": "Examinations portal",
+      "answer": "The SRKR site links to a separate examinations portal at srkrexams.in. Students should use the official examinations portal for current examination notices, timetables, results and examination-related services. The chatbot should not invent dates or results.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/",
+        "https://www.srkrexams.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "examinations",
+        "portal"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "research",
+      "category": "research",
+      "title": "Research and innovation",
+      "answer": "The official website has sections for Research & Development, Entrepreneurship Development, IPR Cell, Institution's Innovation Council, Centres of Excellence, research centres/resources, projects, publications, patents and MoUs. Direct users to the relevant official section for current opportunities, policies and contacts.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "research",
+        "and",
+        "innovation"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "student_clubs",
+      "category": "student_life",
+      "title": "Student clubs and activities",
+      "answer": "The official website provides dedicated Student Clubs and Sports sections under Life at SRKR. The chatbot should direct students to those live pages or the Student Affairs office for current club lists, joining procedures, event dates and eligibility.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "student",
+        "clubs",
+        "and",
+        "activities",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "sports",
+      "category": "student_life",
+      "title": "Sports facilities",
+      "answer": "SRKR's website provides a Sports section and the hostel page mentions a playground and indoor gaming facilities. For current team schedules, sports equipment access, coaching, events and facility rules, contact the Student Affairs or sports office.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/",
+        "https://www.srkrec.ac.in/hostels/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "sports",
+        "facilities",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "wellbeing",
+      "category": "student_support",
+      "title": "Student well-being support",
+      "answer": "The official site has a Well-Being section. For personal, medical, counselling or urgent safety support, students should contact the college's designated support office or emergency services directly; the chatbot should not invent confidential contact details.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "student",
+        "well-being",
+        "support",
+        "student_support"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "ragging",
+      "category": "student_safety",
+      "title": "Anti-ragging",
+      "answer": "The official hostel page explicitly states that SRKR follows a no-ragging ethos. For reporting or current anti-ragging committee contacts and procedures, use the official college policies/committees pages or approach the college administration. Do not fabricate reporting channels.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/hostels/",
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "anti-ragging",
+        "student_safety"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "faculty_directory",
+      "category": "people",
+      "title": "Faculty and leadership directory",
+      "answer": "The official Leadership Team page lists executive leadership, deans, department heads, programme coordinators and administrative roles. Because appointments may change, the chatbot should retrieve names and contacts from the live page rather than treating stored names as permanent.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "faculty",
+        "and",
+        "leadership",
+        "directory",
+        "people"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "fees",
+      "category": "admissions",
+      "title": "Tuition and other fees",
+      "answer": "The official SRKR website has a Fee Structure page. The chatbot should link users to the latest published fee structure and distinguish tuition, university/examination charges, hostel, transport and other charges where the official document does so. Do not estimate or reuse a previous year's amount as current.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/fee-structure/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "tuition",
+        "and",
+        "other",
+        "fees",
+        "admissions"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "academic_calendar",
+      "category": "academics",
+      "title": "Academic calendar",
+      "answer": "The official website has an Academic Calendar page under Regulations & Curriculum. Students should consult the calendar for their programme/regulation and academic year. The chatbot should not invent semester start dates, holidays or examination windows.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/academic-calendar/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "academic",
+        "calendar",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "general_unknown",
+      "category": "fallback",
+      "title": "Unknown or unverified information",
+      "answer": "I could not verify that detail from the SRKR sources currently indexed. Please check the relevant official SRKR page or contact the college office/department. If you share your programme, branch, regulation and year/semester, I can help locate the correct academic resource.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/college-profile/",
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "unknown",
+        "or",
+        "unverified",
+        "information",
+        "fallback"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "institution_snapshot_2026",
+      "category": "college_profile",
+      "title": "Institution snapshot as displayed on the official homepage",
+      "answer": "The SRKR homepage currently displays: established in 1980; NAAC A+ grade with CGPA 3.42 in Cycle II; six NBA-accredited programmes named as CSE, IT, ECE, EEE, Civil Engineering and Mechanical Engineering; 415+ faculty; 160+ PhDs; 30,000+ graduates; 2,344+ placement offers so far for the 2025-26 batch; 2,900+ Scopus-indexed publications; 15,117+ Scopus citations; ₹12.5 crore in funded projects; 200+ published/granted patents; 65+ MOUs; and 16 supported start-ups. These are live homepage figures and may change. Always preserve the reporting date/batch and do not present them as timeless statistics.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "institution",
+        "snapshot",
+        "as",
+        "displayed",
+        "on",
+        "the",
+        "official",
+        "homepage",
+        "college_profile"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "accreditation",
+      "category": "quality_assurance",
+      "title": "Accreditation and institutional recognition",
+      "answer": "The college profile states that SRKR has NAAC A+ accreditation with CGPA 3.42 in Cycle II. It identifies CSE, IT, ECE, EEE, Civil and Mechanical programmes as NBA-accredited. It also describes SRKR as a Scientific and Industrial Research Organisation (SIRO) recognized by the Ministry of Science and Technology. Check the official profile for current accreditation validity and scope.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/college-profile/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "accreditation",
+        "and",
+        "institutional",
+        "recognition",
+        "quality_assurance"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "research_infrastructure",
+      "category": "research",
+      "title": "Research and innovation infrastructure",
+      "answer": "The college profile describes recognized research centres, AICTE IDEA Lab, DST-FIST funding, MSME-backed incubation space and SIRO recognition. The homepage also displays funded projects, publications, citations, patents, MOUs and supported start-ups. For project funding, patents, research centres, incubation and collaboration details, consult the relevant current R&D/Innovation sections.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/college-profile/",
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "research",
+        "and",
+        "innovation",
+        "infrastructure"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "mechanical_department_profile",
+      "category": "departments",
+      "title": "Mechanical Engineering department profile",
+      "answer": "The official Mechanical department page describes Mechanical Engineering as one of SRKR's founding departments, established in 1980. It offers B.Tech, M.Tech in CAD/CAM and PhD/research opportunities. The page reports 40 faculty members, 12 laboratories, more than 160 computing systems/workstations, over 450 research papers, and a sanctioned B.Tech intake of 120 students annually. It describes recognition as a research centre by JNTUK and Andhra University. Staff counts and intake are time-sensitive and should be checked on the live page.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/departments/mechanical/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "mechanical",
+        "engineering",
+        "department",
+        "profile",
+        "departments"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "mechanical_labs",
+      "category": "departments",
+      "title": "Mechanical Engineering laboratories",
+      "answer": "The Mechanical department lists twelve laboratories: Engineering Workshop, Thermal Engineering, Fluid Mechanics & Hydraulics, Strength of Materials, Manufacturing Processes, Metallurgy & Material Science, Heat Transfer, Industrial Engineering, CAD, CAM, Engineering Mechanics and Theory of Machines. Its facilities page describes CAD/CAM and CNC machining resources and software such as AutoCAD, SolidWorks and ABAQUS. Check the department for current equipment access and lab schedules.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/departments/mechanical/facilities/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "mechanical",
+        "engineering",
+        "laboratories",
+        "departments"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "ece_department_labs_detailed",
+      "category": "departments",
+      "title": "ECE laboratories",
+      "answer": "The ECE facilities page lists Electronic Devices & Circuits, Digital Electronics, Analog Circuits, Microprocessors & Microcontrollers, Communication, VLSI Design, Digital Signal Processing (DSP), Microwave & Antennas, IoT, Project & Innovation, and Skill Development laboratories, plus a departmental library. The page describes eleven laboratories and highlights the VLSI Design Lab as a Centre of Excellence.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/departments/ece/facilities/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "ece",
+        "laboratories",
+        "departments"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "leadership_executive",
+      "category": "people",
+      "title": "Executive leadership",
+      "answer": "The official Leadership Team page currently lists Dr. M. Jagapathi Raju as Director, Dr. K.V. Murali Krishna Raju as Principal, and Mr. Ch. Dileep Chakravarthy as Chief Administrative Officer. These appointments can change; retrieve current names from the live page before answering.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "executive",
+        "leadership",
+        "people"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "leadership_deans",
+      "category": "people",
+      "title": "Academic and institutional deans",
+      "answer": "The current Leadership Team page lists Dr. V. Chandra Sekhar (Dean, Academics), Dr. T. Vamsi Nagaraju (Dean, Research and Development), Dr. K.R. Satyanarayana (Dean, Placements and Industry Relations), Dr. S. Rajesh (Dean, IQAC), Dr. G. Harish Kumar Varma (Dean, Student Affairs and Alumni), and Dr. B.S. Diwakar (Dean, Applied Sciences). Verify the live directory because responsibilities and names may change.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "academic",
+        "and",
+        "institutional",
+        "deans",
+        "people"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "hod_contacts",
+      "category": "contacts",
+      "title": "Department head email contacts",
+      "answer": "The current Leadership Team page lists these department contacts: Civil – civil@srkrec.ac.in; CSE – cse@srkrec.ac.in; ECE – ece@srkrec.ac.in; EEE – eee@srkrec.ac.in; Mechanical – mech@srkrec.ac.in; IT – it@srkrec.ac.in; Management Studies – hod.bba@srkrec.ac.in; Mathematics – maths@srkrec.ac.in; Chemistry – chemistry@srkrec.ac.in; Physics – physics@srkrec.ac.in; English and Foreign Languages – english@srkrec.ac.in. Confirm the current HOD and email on the official directory.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "department",
+        "head",
+        "email",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "programme_coordinator_contacts",
+      "category": "contacts",
+      "title": "Programme coordinator email contacts",
+      "answer": "The current Leadership Team page lists programme contacts: CS & IT – csit@srkrec.ac.in; AI & ML – pc.aiml@srkrec.ac.in; AI & Data Science – hod.aids@srkrec.ac.in; CS & Business System – hod.csbs@srkrec.ac.in; CSE-IoT & Cyber Security – hod.cic@srkrec.ac.in; CS & Design – hod.csd@srkrec.ac.in. Verify the current coordinator and address on the official page.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/leadership/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "programme",
+        "coordinator",
+        "email",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "student_clubs_technical",
+      "category": "student_life",
+      "title": "Technical and professional student clubs",
+      "answer": "The official Student Clubs page lists technical/professional groups including E-Mobility, Drone, Embedded and IoT, VLSI, AI, Networking and Cybersecurity, Quantum Technologies, Prompt Engineering, Deep Technology, Web Development, Coding, ACM, IEEE, IEI, ISTE, CSI, IGBC, IIPE and IETE. Their published focus areas include EVs, drones, embedded systems, semiconductor design, AI/ML, cybersecurity, quantum technologies, software development, programming, engineering and professional development. Check the clubs page for current membership and activities.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "technical",
+        "and",
+        "professional",
+        "student",
+        "clubs",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "student_clubs_creative",
+      "category": "student_life",
+      "title": "Creative, cultural and communication clubs",
+      "answer": "The official Student Clubs page lists Content and Media, Fine Arts, Dance, LOLO (music), Theatre, Cine Club, Language Nest, Toastmasters and IKS. Their described activities include photography, videography, graphic design, drawing, painting, classical and contemporary dance, vocal/instrumental music, acting, short films, communication, public speaking, personality development and Indian knowledge systems.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "creative",
+        "cultural",
+        "and",
+        "communication",
+        "clubs",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "student_clubs_service",
+      "category": "student_life",
+      "title": "Service and social-impact student groups",
+      "answer": "The official Student Clubs page lists NSS, Women Empowerment Cell and Unnat Bharat Abhiyan (UBA). Published activity areas include community service, literacy, health and hygiene awareness, blood donation, environmental conservation, disaster management, women's leadership and empowerment, rural development, sanitation, digital literacy and sustainable village development.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "service",
+        "and",
+        "social-impact",
+        "student",
+        "groups",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "sports_clubs",
+      "category": "student_life",
+      "title": "Sports teams and activities",
+      "answer": "The official Student Clubs page lists Badminton, Cricket, Football, Volleyball, Basketball, Kabaddi and Athletics. It describes training/practice and tournaments or competitions. Check the Student Clubs/Sports pages or Student Affairs office for current schedules, team selection, coaching and facility access.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "sports",
+        "teams",
+        "and",
+        "activities",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "samagra_festival",
+      "category": "events",
+      "title": "SAMAGRA annual techno-cultural fest",
+      "answer": "SAMAGRA is described on the official Student Clubs page as a three-day flagship techno-cultural festival. It includes national-level technical competitions in multidisciplinary emerging areas, research conclaves, project expos, cultural events and annual-day celebrations, organized jointly by departments and student clubs. Dates and registration details should be checked from current announcements.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "samagra",
+        "annual",
+        "techno-cultural",
+        "fest",
+        "events"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "jaitra_sports_carnival",
+      "category": "events",
+      "title": "JAITRA annual sports carnival",
+      "answer": "JAITRA is described as SRKR's annual national-level sports carnival, conducted annually during January. The official page says it attracts participants from engineering colleges and universities and features inter-collegiate tournaments and athletics. Check current announcements for the next event date, registration and participating sports.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "jaitra",
+        "annual",
+        "sports",
+        "carnival",
+        "events"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "hackathons_project_expos",
+      "category": "events",
+      "title": "Hackathons and project expos",
+      "answer": "The official Student Clubs page says SRKR hosts departmental hackathons throughout the academic year, focused on technology, sustainability and domain-specific challenges. These provide opportunities for students to collaborate, build solutions, present projects and compete for recognition. Specific themes, eligibility, team size and dates depend on each announcement.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "hackathons",
+        "and",
+        "project",
+        "expos",
+        "events"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "hostel_rules_and_support",
+      "category": "student_life",
+      "title": "Hostel safety and student support",
+      "answer": "The official hostel page says wardens attend to residents and regularly provide medical and other essential support. It states that the campus follows a no-ragging ethos and encourages hostel residents to use the gymnasium, playground and indoor gaming facilities. For curfew, leave, visitors, mess, room allocation, fees and disciplinary rules, consult the hostel office; do not infer rules that are not published.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/hostels/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "hostel",
+        "safety",
+        "and",
+        "student",
+        "support",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "transport_service",
+      "category": "student_life",
+      "title": "College bus service",
+      "answer": "SRKR operates a dedicated college bus fleet for students and staff commuting from Bhimavaram and surrounding towns/villages. The official transport page says the buses cover multiple rural and urban routes and aim to reach campus at least 15 minutes before classes and office hours. It does not mean every village is served; confirm route, stop, seat availability, fees and timings with the Transport Section.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/transportation/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "college",
+        "bus",
+        "service",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "campus_location_limits",
+      "category": "campus_navigation",
+      "title": "Limitations of public campus map",
+      "answer": "The Mapcarta campus map is based on OpenStreetMap and related public geographic data. It can help identify mapped outdoor features, but it does not guarantee the latest campus layout, internal building entrances, floor plans, room numbers or all department blocks. For precise navigation, ask the college reception, security desk or relevant department.",
+      "source_urls": [
+        "https://mapcarta.com/W851081636"
+      ],
+      "aliases": [],
+      "keywords": [
+        "limitations",
+        "of",
+        "public",
+        "campus",
+        "map",
+        "campus_navigation"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "admissions_contact_path",
+      "category": "admissions",
+      "title": "Where to verify admission details",
+      "answer": "For admissions, use the official SRKR Admission Overview, Admission Procedure, Admission Brochure, Fee Structure and EAPCET rank cut-off sections linked from the college website. Admission eligibility, seat categories, counselling rounds, documents and fee amounts are academic-year dependent. The chatbot should state the relevant year and link the official notice instead of treating older details as current.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "where",
+        "to",
+        "verify",
+        "admission",
+        "details",
+        "admissions"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "placement_contact_team",
+      "category": "contacts",
+      "title": "Placement team contacts",
+      "answer": "The current placements team page lists Dean of Placements & Industry Relations Dr. K.R. Satyanarayana at krsn@srkrec.ac.in and 9704195376; Manager Corporate Relations G. Ashok Reddy at corporaterelations@srkrec.ac.in and 9440359517; and Manager International Affairs Baskar C at baskar.c@srkrec.ac.in and 9790997707. It lists the T&P office at U Block, with office hours Monday-Saturday, 9 AM-5 PM. Verify live before use.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/placements-team/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "placement",
+        "team",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "placement_branch_coordinators",
+      "category": "contacts",
+      "title": "Department placement coordinators",
+      "answer": "The placements team page lists branch-level T&P coordinators and their contact details. Since individual assignments and personal contact details may change, the chatbot should link to the current official placements team page rather than store these details as permanent facts. For general placement queries, use dean.placements@srkrec.ac.in or the published Dean of Placements contact.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/placements-team/"
+      ],
+      "time_sensitive": true,
+      "aliases": [],
+      "keywords": [
+        "department",
+        "placement",
+        "coordinators",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "college_contact_channels",
+      "category": "contacts",
+      "title": "College contact channels",
+      "answer": "The college homepage/footer provides general contact details, while individual service pages provide dedicated addresses for hostels, transport, placements and departments. Route the user to the office that handles their issue rather than always giving the main college number. Check the official contact page for the latest details.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/",
+        "https://www.srkrec.ac.in/leadership/",
+        "https://www.srkrec.ac.in/hostels/",
+        "https://www.srkrec.ac.in/transportation/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "college",
+        "contact",
+        "channels",
+        "contacts"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "library_resources",
+      "category": "student_life",
+      "title": "Library digital resources",
+      "answer": "The official library page lists electronic resources and databases including ScienceDirect, ASCE Library, IEEE Xplore, Springer, DELNET, J-Gate, N-LIST, NPTEL and Knimbus. Access conditions may differ by resource and may require campus network or institutional login. Students should use the library's official resource links or ask library staff about remote access.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/library/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "library",
+        "digital",
+        "resources",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "library_services",
+      "category": "student_life",
+      "title": "Library services and spaces",
+      "answer": "The library page describes RFID automation, reading and reference sections, book-bank services, a Digital Learning Centre, e-learning resources and catalogue search through OPAC. It also lists print journals and electronic journals. Current borrowing limits, opening hours, fines, membership and renewal rules should be confirmed with the library because these operational rules may change.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/library/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "library",
+        "services",
+        "and",
+        "spaces",
+        "student_life"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "department_facilities_route",
+      "category": "departments",
+      "title": "Finding department facilities",
+      "answer": "Department-specific facilities are published on individual department pages. For example, the ECE page lists eleven laboratories and the Mechanical page lists twelve. Do not assume that one department's laboratory list applies to another branch. For branch-specific labs, projects, faculty, research and infrastructure, open the relevant department page from the official SRKR website.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "finding",
+        "department",
+        "facilities",
+        "departments"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "academic_regulation_selection",
+      "category": "academics",
+      "title": "How to choose the right regulation",
+      "answer": "The syllabus directory contains multiple regulations because students from different admission batches may follow different curricula. Do not automatically choose the newest regulation. First identify the student's admission batch, programme/branch and year/semester, then match those details to the applicable official regulation. If uncertain, ask the academic section or department.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "how",
+        "to",
+        "choose",
+        "the",
+        "right",
+        "regulation",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "r23_btech_catalogue",
+      "category": "academics",
+      "title": "R23 B.Tech syllabus coverage",
+      "answer": "The official syllabus directory lists R23 B.Tech syllabus resources for I, II, III and IV years across AIDS, AIML, CSIT, Civil, CSBS, CSD, CSE, CIC, ECE, EEE, IT and Mechanical. It also lists model papers, Open Electives I-IV, Honours and Minors. This catalogue does not itself contain the full subject names, credits, units or course outcomes; those must be extracted from the linked R23 PDFs.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "r23",
+        "b",
+        "tech",
+        "syllabus",
+        "coverage",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "r20_btech_catalogue",
+      "category": "academics",
+      "title": "R20 B.Tech syllabus coverage",
+      "answer": "The official syllabus directory lists R20 B.Tech resources for I, II, III and IV years across AIDS, Civil, CSBS, CSD, CSE, CIC, ECE, EEE, IT and Mechanical, along with Honours, Minors and open electives. Students should verify whether R20 applies to their batch before using these documents.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "r20",
+        "b",
+        "tech",
+        "syllabus",
+        "coverage",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "r26_first_year_catalogue",
+      "category": "academics",
+      "title": "R26 first-year B.Tech syllabus coverage",
+      "answer": "The official directory lists R26 B.Tech first-year syllabus and model papers for AIDS, AIML, CSIT, Civil, CSBS, CSD, CSE, CIC, ECE, EEE, IT and Mechanical. The directory index does not provide all subject-level details in its listing; consult the corresponding R26 PDF.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "r26",
+        "first-year",
+        "b",
+        "tech",
+        "syllabus",
+        "coverage",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "r24_bba_catalogue",
+      "category": "academics",
+      "title": "R24 BBA syllabus coverage",
+      "answer": "The official directory lists R24 BBA syllabus and model-paper resources for I, II and III years. Students should select the correct BBA year and the R24 document from the official syllabus directory.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "r24",
+        "bba",
+        "syllabus",
+        "coverage",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "r25_mtech_catalogue",
+      "category": "academics",
+      "title": "R25 M.Tech syllabus coverage",
+      "answer": "The official syllabus directory lists R25 M.Tech resources for specializations including Computer Science and Technology, Communication Systems, Power Systems and Automation, CAD/CAM, Information Technology and Structural Engineering. Confirm the exact specialization name and current availability from the official programme/admission pages.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/syllabus/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "r25",
+        "m",
+        "tech",
+        "syllabus",
+        "coverage",
+        "academics"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    },
+    {
+      "id": "events_and_annual_activities",
+      "category": "events",
+      "title": "Campus events and activities",
+      "answer": "The Student Clubs page highlights SAMAGRA, JAITRA, NSS special camps, hackathons and project expos. Dates, registration links, eligibility, venues and schedules are event-specific. The chatbot should retrieve current event announcements rather than reuse old dates.",
+      "source_urls": [
+        "https://www.srkrec.ac.in/student-clubs/"
+      ],
+      "aliases": [],
+      "keywords": [
+        "campus",
+        "events",
+        "and",
+        "activities"
+      ],
+      "audiences": [
+        "prospective_students",
+        "students",
+        "parents",
+        "faculty",
+        "visitors"
+      ]
+    }
+  ],
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening",
+        "hello SRKR chatbot"
+      ],
+      "responses": [
+        "Hello! I can help with SRKR programmes, syllabus, campus, admissions, facilities, placements and student services."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "thank you bye",
+        "that's all"
+      ],
+      "responses": [
+        "Thank you for contacting the SRKR information assistant."
+      ]
+    },
+    {
+      "tag": "college_identity",
+      "patterns": [
+        "What is SRKR?",
+        "Tell me about SRKR Engineering College",
+        "Where is SRKR located?",
+        "What is the full name of SRKR?",
+        "When was SRKR established?",
+        "What is the college address?"
+      ],
+      "responses": [
+        "Sagi Rama Krishnam Raju Engineering College is located at SRKR Marg, China Amiram, Bhimavaram, Andhra Pradesh - 534204. The college profile states it was founded in 1980."
+      ]
+    },
+    {
+      "tag": "campus_size",
+      "patterns": [
+        "How big is the SRKR campus?",
+        "What is the campus area?",
+        "How many acres is SRKR?",
+        "Tell me about the campus",
+        "How many acres does the college cover?",
+        "Is SRKR a large campus?",
+        "What is the size of the college campus?"
+      ],
+      "responses": [
+        "The college profile describes a 30-acre campus. See the official college profile for current institutional information."
+      ]
+    },
+    {
+      "tag": "campus_map",
+      "patterns": [
+        "Show me the SRKR campus map",
+        "Where is N Block?",
+        "Where is the Civil Department?",
+        "Where is Silver Jubilee Block?",
+        "Where is WET Centre?",
+        "Where is the SRKR ground?",
+        "Where is SRKR Pond?",
+        "Can you help me locate buildings on campus?",
+        "Does the map show all SRKR blocks?",
+        "Can I find room numbers on Mapcarta?",
+        "Is the campus map official?"
+      ],
+      "responses": [
+        "The public campus map labels N Block, Civil Department, Silver Jubilee Block, WET Centre, Ground/Pitch and SRKR Pond. It is not a complete indoor map; ask the college office for exact room locations."
+      ]
+    },
+    {
+      "tag": "ug_programmes",
+      "patterns": [
+        "What B.Tech branches are available?",
+        "Which undergraduate courses does SRKR offer?",
+        "Does SRKR have AIML?",
+        "Is BBA available?",
+        "List all UG programmes"
+      ],
+      "responses": [
+        "SRKR's official programmes page lists AI & Data Science, AI & ML, Civil, CSBS, CSD, CSE, ECE, EEE, IT, Mechanical, CIC, CS & IT and BBA."
+      ]
+    },
+    {
+      "tag": "pg_programmes",
+      "patterns": [
+        "What M.Tech courses are available?",
+        "Does SRKR offer postgraduate programmes?",
+        "List PG specializations"
+      ],
+      "responses": [
+        "The official programmes page lists postgraduate specializations including CAD/CAM, Structural Engineering, Communication Systems, Computer Science and Technology, IT, Power Systems and Automation, Electric Vehicle Technology and Artificial Intelligence."
+      ]
+    },
+    {
+      "tag": "phd_programmes",
+      "patterns": [
+        "Does SRKR offer PhD?",
+        "Which PhD departments are available?",
+        "Can I do research at SRKR?"
+      ],
+      "responses": [
+        "The official programmes page lists PhD areas across engineering and basic sciences, including Civil, CSE, ECE, EEE, IT, Mechanical, Mathematics, Chemistry, Physics and English."
+      ]
+    },
+    {
+      "tag": "syllabus_directory",
+      "patterns": [
+        "Where can I find SRKR syllabus?",
+        "Give me the official syllabus link",
+        "How do I download my syllabus?",
+        "Where are SRKR regulations listed?"
+      ],
+      "responses": [
+        "Use the official SRKR syllabus directory. Select the correct regulation, branch/programme and year."
+      ]
+    },
+    {
+      "tag": "regulation_help",
+      "patterns": [
+        "Which regulation applies to me?",
+        "How do I know whether I am R23 or R20?",
+        "What is my syllabus regulation?",
+        "Which regulation should I select?"
+      ],
+      "responses": [
+        "Your applicable regulation depends on your admission batch and college records. Share your admission year, programme, branch and year/semester; verify the final regulation with the college."
+      ]
+    },
+    {
+      "tag": "subject_syllabus",
+      "patterns": [
+        "What subjects do I have this semester?",
+        "Show my semester syllabus",
+        "What are the subjects in second year AIML?",
+        "Give me the course structure for my branch"
+      ],
+      "responses": [
+        "I need your programme, branch, regulation and year/semester to identify the exact syllabus. Use the official syllabus directory for the authoritative PDF."
+      ]
+    },
+    {
+      "tag": "model_papers",
+      "patterns": [
+        "Where can I get model question papers?",
+        "Are model papers available?",
+        "Download previous model papers"
+      ],
+      "responses": [
+        "The official syllabus directory provides model-paper links for many regulation, branch and year combinations."
+      ]
+    },
+    {
+      "tag": "open_electives",
+      "patterns": [
+        "Where are open elective subjects listed?",
+        "What are Open Electives I to IV?",
+        "How do I find open elective syllabus?"
+      ],
+      "responses": [
+        "Open elective syllabus and model-paper resources are listed in the relevant regulation section of the official syllabus directory."
+      ]
+    },
+    {
+      "tag": "honours_minors",
+      "patterns": [
+        "Does SRKR offer Honours?",
+        "Where can I find minor courses?",
+        "Are minors available in B.Tech?"
+      ],
+      "responses": [
+        "The R23 and R20 syllabus sections list Honours and Minor resources. Check your regulation and official eligibility rules."
+      ]
+    },
+    {
+      "tag": "departments",
+      "patterns": [
+        "List SRKR departments",
+        "Who are the department heads?",
+        "How do I contact my HOD?",
+        "Where can I find programme coordinators?"
+      ],
+      "responses": [
+        "Use the official Leadership Team page for current department heads and programme coordinators."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "Does SRKR have hostels?",
+        "Tell me about boys and girls hostels",
+        "What hostel facilities are available?",
+        "How can I contact the hostel office?"
+      ],
+      "responses": [
+        "SRKR's official hostel page describes on-campus accommodation, wardens, student support and recreational facilities. Contact hostels@srkrec.ac.in for current details."
+      ]
+    },
+    {
+      "tag": "hostel_contacts",
+      "patterns": [
+        "What is the girls hostel phone number?",
+        "Give boys hostel contact",
+        "How can I reach the chief warden?"
+      ],
+      "responses": [
+        "The hostel page lists Chief Warden 8074874235, Boys Hostel 9492123311 and Girls Hostel 7995383711. Verify these on the live official page."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "Does SRKR have a central library?",
+        "What facilities are available in the library?",
+        "How many books are in the library?",
+        "Can I access IEEE journals?",
+        "What is the library OPAC?"
+      ],
+      "responses": [
+        "The central library has RFID automation, reading/reference facilities, a Digital Learning Centre and e-resources. The official library page links to OPAC and databases."
+      ]
+    },
+    {
+      "tag": "transport",
+      "patterns": [
+        "Are college buses available?",
+        "Does SRKR provide transport from nearby towns?",
+        "How do I know bus routes and timings?",
+        "Where is the transport office?",
+        "Do buses come from nearby villages?",
+        "How early do college buses reach?",
+        "Does the college have its own bus fleet?",
+        "Are rural routes covered?"
+      ],
+      "responses": [
+        "College buses connect Bhimavaram and surrounding towns. Contact the Transport Section for current routes, stops, fees and timings."
+      ]
+    },
+    {
+      "tag": "transport_contact",
+      "patterns": [
+        "What is the transport office number?",
+        "Give me SRKR transport email",
+        "How can I contact the transport in-charge?"
+      ],
+      "responses": [
+        "Transport Section, Admin Block: +91 884 222 6666; transport@srkrec.ac.in. Verify the official page for updates."
+      ]
+    },
+    {
+      "tag": "placements",
+      "patterns": [
+        "Does SRKR provide placements?",
+        "Tell me about the placement cell",
+        "How can I contact placements?",
+        "Where is the placement office?"
+      ],
+      "responses": [
+        "SRKR has a Training & Placement team with department coordinators. The official page lists contacts and current reporting-period statistics."
+      ]
+    },
+    {
+      "tag": "placement_stats",
+      "patterns": [
+        "What is the latest placement percentage?",
+        "What is the highest package at SRKR?",
+        "How many recruiters visited SRKR?",
+        "Show placement statistics"
+      ],
+      "responses": [
+        "The official placements team page publishes batch-specific placement statistics. Treat them as reporting-period figures, not individual guarantees; check the live page for the latest values."
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "How can I get admission to SRKR?",
+        "What is the admission procedure?",
+        "Where is the admission brochure?",
+        "What are the eligibility criteria?",
+        "Where do I see EAPCET cutoffs?",
+        "What documents are needed for admission?",
+        "How can parents verify admission information?"
+      ],
+      "responses": [
+        "Check the official Admission Procedure and Admission Overview pages for current routes, eligibility and documents."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "What is the B.Tech fee?",
+        "Where can I find college fees?",
+        "What is the current fee structure?",
+        "How much is hostel fee?",
+        "Where can I check tuition and hostel charges?",
+        "Are current fees published online?",
+        "Can you tell me the fee for this academic year?"
+      ],
+      "responses": [
+        "Use the official fee structure for current tuition and other charges. Hostel and transport charges should be confirmed with their respective offices."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "Where can I check exam timetable?",
+        "Where are SRKR results published?",
+        "What is the examination portal?",
+        "How do I check my exam details?"
+      ],
+      "responses": [
+        "The college website links to the SRKR examinations portal at srkrexams.in. Check it for current notices, timetables and results."
+      ]
+    },
+    {
+      "tag": "academic_calendar",
+      "patterns": [
+        "Where is the academic calendar?",
+        "When does the semester start?",
+        "Where can I check holidays?",
+        "Where can I find semester dates?",
+        "Is the holiday list online?",
+        "Where can I download the academic calendar?"
+      ],
+      "responses": [
+        "Use the official Academic Calendar page for your programme and academic year. Dates should not be guessed."
+      ]
+    },
+    {
+      "tag": "research",
+      "patterns": [
+        "Does SRKR have research facilities?",
+        "What research centres are available?",
+        "How can I contact the R&D cell?"
+      ],
+      "responses": [
+        "The official website lists Research & Development, IPR, IIC, Centres of Excellence, research resources, projects, publications and patents."
+      ]
+    },
+    {
+      "tag": "clubs",
+      "patterns": [
+        "What student clubs are there?",
+        "How can I join a club?",
+        "Where can I see college events?"
+      ],
+      "responses": [
+        "Check the official Student Clubs section and contact Student Affairs for current club membership and event details."
+      ]
+    },
+    {
+      "tag": "sports",
+      "patterns": [
+        "What sports facilities are available?",
+        "Does SRKR have a playground?",
+        "Can hostel students use gym facilities?"
+      ],
+      "responses": [
+        "The official site has a Sports section; the hostel page mentions playground, gymnasium and indoor games."
+      ]
+    },
+    {
+      "tag": "wellbeing",
+      "patterns": [
+        "Is student counselling available?",
+        "Where can I get student support?",
+        "Who should I contact for wellbeing support?"
+      ],
+      "responses": [
+        "SRKR has a Well-Being section. Use the official college support channels for current contacts and confidential assistance."
+      ]
+    },
+    {
+      "tag": "anti_ragging",
+      "patterns": [
+        "What should I do if ragging happens?",
+        "Does SRKR have anti-ragging rules?",
+        "How do I report ragging?"
+      ],
+      "responses": [
+        "SRKR states a no-ragging ethos. For official reporting channels and current committee contacts, use the college policies/committees pages or contact administration."
+      ]
+    },
+    {
+      "tag": "ece_labs",
+      "patterns": [
+        "What labs are in ECE?",
+        "Does ECE have an IoT lab?",
+        "Is there a VLSI lab at SRKR?",
+        "Name the ECE department labs.",
+        "Does ECE have a VLSI centre?",
+        "What are the electronics lab facilities?",
+        "Is an IoT lab available in ECE?"
+      ],
+      "responses": [
+        "The ECE facilities page lists eleven labs, including VLSI Design, Microwave & Antennas, IoT, DSP, communication and electronics labs."
+      ]
+    },
+    {
+      "tag": "general_contact",
+      "patterns": [
+        "What is SRKR contact number?",
+        "Give me the college email address",
+        "How can I contact the college office?"
+      ],
+      "responses": [
+        "The college website footer lists +91 9848823332 and info@srkrec.ac.in. For a specific service, use its dedicated office contact."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "Can you help me?",
+        "I have a question not listed here",
+        "I need information that is not available"
+      ],
+      "responses": [
+        "I could not verify that detail from the SRKR sources currently indexed. Please check the official college website or contact the relevant office."
+      ]
+    },
+    {
+      "tag": "accreditation",
+      "patterns": [
+        "Is SRKR NAAC accredited?",
+        "What is SRKR's NAAC grade?",
+        "Which programmes have NBA accreditation?",
+        "Is SRKR autonomous?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "research_infrastructure",
+      "patterns": [
+        "Does SRKR have an innovation centre?",
+        "What research facilities does the college have?",
+        "Does the college have an AICTE IDEA Lab?",
+        "Tell me about SRKR's incubation facilities."
+      ],
+      "responses": []
+    },
+    {
+      "tag": "mechanical_department",
+      "patterns": [
+        "Tell me about the Mechanical department.",
+        "Does SRKR have M.Tech CAD CAM?",
+        "Is Mechanical Engineering a research department?",
+        "How many labs are available in Mechanical?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "mechanical_labs",
+      "patterns": [
+        "List Mechanical Engineering labs.",
+        "Does Mechanical have a CAD lab?",
+        "Is there a CNC facility?",
+        "What software is available in Mechanical labs?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "leadership",
+      "patterns": [
+        "Who is the principal of SRKR?",
+        "Who is the director?",
+        "Who is the chief administrative officer?",
+        "Who is the dean of academics?",
+        "Who heads research and development?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "hod_contacts",
+      "patterns": [
+        "Give me the CSE HOD email.",
+        "What is the ECE department email?",
+        "How can I email the Civil HOD?",
+        "Give department contact emails."
+      ],
+      "responses": []
+    },
+    {
+      "tag": "programme_coordinator_contacts",
+      "patterns": [
+        "Who coordinates AIML?",
+        "What is the AIML coordinator email?",
+        "How do I contact the CSBS coordinator?",
+        "Give me the CSIT programme email."
+      ],
+      "responses": []
+    },
+    {
+      "tag": "technical_clubs",
+      "patterns": [
+        "What technical clubs can I join?",
+        "Is there an AI club?",
+        "Does SRKR have a coding club?",
+        "Is there a cybersecurity club?",
+        "What clubs focus on drones and IoT?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "creative_clubs",
+      "patterns": [
+        "Are there photography or film clubs?",
+        "Is there a music club?",
+        "Can I join dance or theatre?",
+        "Is Toastmasters available?",
+        "Are there drawing and painting activities?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "service_clubs",
+      "patterns": [
+        "Does SRKR have NSS?",
+        "Is there a Women Empowerment Cell?",
+        "What is Unnat Bharat Abhiyan?",
+        "Are there community service opportunities?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "sports_clubs",
+      "patterns": [
+        "Which sports can students play?",
+        "Does SRKR have a cricket team?",
+        "Are there badminton and basketball activities?",
+        "What sports clubs are active?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "samagra",
+      "patterns": [
+        "What is SAMAGRA?",
+        "Does SRKR conduct a cultural fest?",
+        "What happens during the annual techno cultural fest?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "jaitra",
+      "patterns": [
+        "What is JAITRA?",
+        "When is the annual sports carnival usually held?",
+        "Does SRKR conduct a national sports event?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "hackathons",
+      "patterns": [
+        "Are there hackathons in SRKR?",
+        "Can students participate in project expos?",
+        "How can I find technical competitions?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "hostel_safety",
+      "patterns": [
+        "Are wardens available in the hostels?",
+        "Is medical help available for hostel students?",
+        "What safety arrangements are mentioned for hostels?",
+        "Does SRKR prohibit ragging?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "library_resources",
+      "patterns": [
+        "Can students use IEEE Xplore?",
+        "Does the library provide NPTEL?",
+        "What online journals can I access?",
+        "Are digital learning resources available?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "library_services",
+      "patterns": [
+        "Can I search books online?",
+        "Does SRKR library have OPAC?",
+        "Is there a digital learning centre?",
+        "Does the library have a book bank?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "r23_syllabus",
+      "patterns": [
+        "Which branches have R23 syllabus PDFs?",
+        "Is R23 syllabus available for AIML?",
+        "Where are R23 fourth-year subjects?",
+        "Can I find R23 open electives?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "r20_syllabus",
+      "patterns": [
+        "Which branches are covered under R20?",
+        "Is R20 syllabus available for CSE?",
+        "Where can I find R20 minors and honours?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "r26_syllabus",
+      "patterns": [
+        "Is R26 available for first year?",
+        "Where is the R26 AIML syllabus?",
+        "Which branches have R26 model papers?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "r24_bba",
+      "patterns": [
+        "Where can I download BBA R24 syllabus?",
+        "Is there a third-year BBA syllabus?",
+        "Are BBA model papers available?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "r25_mtech",
+      "patterns": [
+        "Where is R25 M.Tech syllabus?",
+        "Is CAD CAM listed in R25?",
+        "Does the syllabus page list Structural Engineering M.Tech?"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "placement_contact",
+      "patterns": [
+        "Where is the T&P office located?",
+        "What are placement office hours?",
+        "How can a company contact SRKR placements?",
+        "Give me the placement dean's email."
+      ],
+      "responses": []
+    }
+  ],
+  "training_guidance": {
+    "recommended_split": "Split by intent/pattern family, not random near-duplicate utterances, to reduce leakage.",
+    "preprocessing": "Lowercase, normalize whitespace and punctuation consistently; retain meaningful branch codes and regulation labels such as AIML, R23 and R20.",
+    "label_field": "tag",
+    "input_field": "patterns",
+    "target_field": "tag",
+    "response_field": "responses",
+    "model_comparison": "Use the same train/validation/test split, vocabulary, sequence length, embedding dimension and tuning budget for SimpleRNN, LSTM, GRU and Bi-LSTM.",
+    "evaluation": "Report accuracy, macro precision, macro recall, macro F1 and confusion matrix. Include unseen paraphrases in the test set.",
+    "deployment": "Predict an intent, then retrieve the answer from knowledge_base. For syllabus questions, collect missing slots (programme, branch, regulation, year/semester) before retrieval.",
+    "do_not_train_on": "Do not treat source URLs, metadata, or whole long answer paragraphs as user question patterns."
+  },
+  "coverage_note": "Expanded with current official pages for leadership, clubs, department labs, placements, hostels, transport, and syllabus-regulation catalogues. Subject-by-subject syllabus extraction is still pending; this version does not claim every PDF has been parsed.",
+  "retrieval_design": {
+    "recommended_pipeline": [
+      "Normalize spelling, casing, punctuation and whitespace without deleting meaningful terms such as AIML, R23, CSE, BBA or semester numbers.",
+      "Use a sentence-embedding model to retrieve the closest knowledge records from title, aliases, keywords, answer and source metadata.",
+      "Use the RNN/LSTM/GRU/Bi-LSTM model as an intent classifier or comparative research component, not as the only source of factual answers.",
+      "Retrieve the top 3-5 records, rerank by exact branch/regulation/year match, and answer only from retrieved SRKR facts.",
+      "For current or changeable details (fees, admissions, cutoffs, contacts, staff, placements, routes, events), check the official live page before answering.",
+      "If evidence is missing, say so and route the question to the appropriate office instead of generating a plausible-sounding answer."
+    ],
+    "question_robustness": "Add paraphrases and synonyms to the same intent, but use semantic retrieval so unseen phrasings can still match the correct knowledge record.",
+    "metadata_fields_to_add_when_ingesting_more_sources": [
+      "aliases",
+      "keywords",
+      "entities",
+      "audience",
+      "programme",
+      "branch",
+      "regulation",
+      "year",
+      "semester",
+      "effective_date",
+      "last_verified",
+      "source_type",
+      "source_url",
+      "confidence"
+    ],
+    "answer_policy": "Separate official facts, map-only observations, and inferred navigation. Cite or link the official source in the deployed chatbot."
+  }
+}

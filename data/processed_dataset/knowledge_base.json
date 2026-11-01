@@ -1,0 +1,410 @@
+{
+  "greeting": {
+    "tag": "greeting",
+    "category": "General",
+    "responses": [
+      "Hello! I can help with SRKR programmes, syllabus, campus, admissions, facilities, placements and student services."
+    ],
+    "patterns_sample": [
+      "hi",
+      "hello",
+      "hey"
+    ]
+  },
+  "goodbye": {
+    "tag": "goodbye",
+    "category": "General",
+    "responses": [
+      "Thank you for contacting the SRKR information assistant."
+    ],
+    "patterns_sample": [
+      "bye",
+      "goodbye",
+      "see you"
+    ]
+  },
+  "college_identity": {
+    "tag": "college_identity",
+    "category": "General",
+    "responses": [
+      "Sagi Rama Krishnam Raju Engineering College is located at SRKR Marg, China Amiram, Bhimavaram, Andhra Pradesh - 534204. The college profile states it was founded in 1980."
+    ],
+    "patterns_sample": [
+      "What is SRKR?",
+      "Tell me about SRKR Engineering College",
+      "Where is SRKR located?"
+    ]
+  },
+  "campus_size": {
+    "tag": "campus_size",
+    "category": "General",
+    "responses": [
+      "The college profile describes a 30-acre campus. See the official college profile for current institutional information."
+    ],
+    "patterns_sample": [
+      "How big is the SRKR campus?",
+      "What is the campus area?",
+      "How many acres is SRKR?"
+    ]
+  },
+  "campus_map": {
+    "tag": "campus_map",
+    "category": "General",
+    "responses": [
+      "The public campus map labels N Block, Civil Department, Silver Jubilee Block, WET Centre, Ground/Pitch and SRKR Pond. It is not a complete indoor map; ask the college office for exact room locations."
+    ],
+    "patterns_sample": [
+      "Show me the SRKR campus map",
+      "Where is N Block?",
+      "Where is the Civil Department?"
+    ]
+  },
+  "ug_programmes": {
+    "tag": "ug_programmes",
+    "category": "General",
+    "responses": [
+      "SRKR's official programmes page lists AI & Data Science, AI & ML, Civil, CSBS, CSD, CSE, ECE, EEE, IT, Mechanical, CIC, CS & IT and BBA."
+    ],
+    "patterns_sample": [
+      "What B.Tech branches are available?",
+      "Which undergraduate courses does SRKR offer?",
+      "Does SRKR have AIML?"
+    ]
+  },
+  "pg_programmes": {
+    "tag": "pg_programmes",
+    "category": "General",
+    "responses": [
+      "The official programmes page lists postgraduate specializations including CAD/CAM, Structural Engineering, Communication Systems, Computer Science and Technology, IT, Power Systems and Automation, Electric Vehicle Technology and Artificial Intelligence."
+    ],
+    "patterns_sample": [
+      "What M.Tech courses are available?",
+      "Does SRKR offer postgraduate programmes?",
+      "List PG specializations"
+    ]
+  },
+  "phd_programmes": {
+    "tag": "phd_programmes",
+    "category": "General",
+    "responses": [
+      "The official programmes page lists PhD areas across engineering and basic sciences, including Civil, CSE, ECE, EEE, IT, Mechanical, Mathematics, Chemistry, Physics and English."
+    ],
+    "patterns_sample": [
+      "Does SRKR offer PhD?",
+      "Which PhD departments are available?",
+      "Can I do research at SRKR?"
+    ]
+  },
+  "syllabus_directory": {
+    "tag": "syllabus_directory",
+    "category": "General",
+    "responses": [
+      "Use the official SRKR syllabus directory. Select the correct regulation, branch/programme and year."
+    ],
+    "patterns_sample": [
+      "Where can I find SRKR syllabus?",
+      "Give me the official syllabus link",
+      "How do I download my syllabus?"
+    ]
+  },
+  "regulation_help": {
+    "tag": "regulation_help",
+    "category": "General",
+    "responses": [
+      "Your applicable regulation depends on your admission batch and college records. Share your admission year, programme, branch and year/semester; verify the final regulation with the college."
+    ],
+    "patterns_sample": [
+      "Which regulation applies to me?",
+      "How do I know whether I am R23 or R20?",
+      "What is my syllabus regulation?"
+    ]
+  },
+  "subject_syllabus": {
+    "tag": "subject_syllabus",
+    "category": "General",
+    "responses": [
+      "I need your programme, branch, regulation and year/semester to identify the exact syllabus. Use the official syllabus directory for the authoritative PDF."
+    ],
+    "patterns_sample": [
+      "What subjects do I have this semester?",
+      "Show my semester syllabus",
+      "What are the subjects in second year AIML?"
+    ]
+  },
+  "model_papers": {
+    "tag": "model_papers",
+    "category": "General",
+    "responses": [
+      "The official syllabus directory provides model-paper links for many regulation, branch and year combinations."
+    ],
+    "patterns_sample": [
+      "Where can I get model question papers?",
+      "Are model papers available?",
+      "Download previous model papers"
+    ]
+  },
+  "open_electives": {
+    "tag": "open_electives",
+    "category": "General",
+    "responses": [
+      "Open elective syllabus and model-paper resources are listed in the relevant regulation section of the official syllabus directory."
+    ],
+    "patterns_sample": [
+      "Where are open elective subjects listed?",
+      "What are Open Electives I to IV?",
+      "How do I find open elective syllabus?"
+    ]
+  },
+  "honours_minors": {
+    "tag": "honours_minors",
+    "category": "General",
+    "responses": [
+      "The R23 and R20 syllabus sections list Honours and Minor resources. Check your regulation and official eligibility rules."
+    ],
+    "patterns_sample": [
+      "Does SRKR offer Honours?",
+      "Where can I find minor courses?",
+      "Are minors available in B.Tech?"
+    ]
+  },
+  "departments": {
+    "tag": "departments",
+    "category": "General",
+    "responses": [
+      "Use the official Leadership Team page for current department heads and programme coordinators."
+    ],
+    "patterns_sample": [
+      "List SRKR departments",
+      "Who are the department heads?",
+      "How do I contact my HOD?"
+    ]
+  },
+  "hostel": {
+    "tag": "hostel",
+    "category": "General",
+    "responses": [
+      "SRKR's official hostel page describes on-campus accommodation, wardens, student support and recreational facilities. Contact hostels@srkrec.ac.in for current details."
+    ],
+    "patterns_sample": [
+      "Does SRKR have hostels?",
+      "Tell me about boys and girls hostels",
+      "What hostel facilities are available?"
+    ]
+  },
+  "hostel_contacts": {
+    "tag": "hostel_contacts",
+    "category": "General",
+    "responses": [
+      "The hostel page lists Chief Warden 8074874235, Boys Hostel 9492123311 and Girls Hostel 7995383711. Verify these on the live official page."
+    ],
+    "patterns_sample": [
+      "What is the girls hostel phone number?",
+      "Give boys hostel contact",
+      "How can I reach the chief warden?"
+    ]
+  },
+  "library": {
+    "tag": "library",
+    "category": "General",
+    "responses": [
+      "The central library has RFID automation, reading/reference facilities, a Digital Learning Centre and e-resources. The official library page links to OPAC and databases."
+    ],
+    "patterns_sample": [
+      "Does SRKR have a central library?",
+      "What facilities are available in the library?",
+      "How many books are in the library?"
+    ]
+  },
+  "transport": {
+    "tag": "transport",
+    "category": "General",
+    "responses": [
+      "College buses connect Bhimavaram and surrounding towns. Contact the Transport Section for current routes, stops, fees and timings."
+    ],
+    "patterns_sample": [
+      "Are college buses available?",
+      "Does SRKR provide transport from nearby towns?",
+      "How do I know bus routes and timings?"
+    ]
+  },
+  "transport_contact": {
+    "tag": "transport_contact",
+    "category": "General",
+    "responses": [
+      "Transport Section, Admin Block: +91 884 222 6666; transport@srkrec.ac.in. Verify the official page for updates."
+    ],
+    "patterns_sample": [
+      "What is the transport office number?",
+      "Give me SRKR transport email",
+      "How can I contact the transport in-charge?"
+    ]
+  },
+  "placements": {
+    "tag": "placements",
+    "category": "General",
+    "responses": [
+      "SRKR has a Training & Placement team with department coordinators. The official page lists contacts and current reporting-period statistics."
+    ],
+    "patterns_sample": [
+      "Does SRKR provide placements?",
+      "Tell me about the placement cell",
+      "How can I contact placements?"
+    ]
+  },
+  "placement_stats": {
+    "tag": "placement_stats",
+    "category": "General",
+    "responses": [
+      "The official placements team page publishes batch-specific placement statistics. Treat them as reporting-period figures, not individual guarantees; check the live page for the latest values."
+    ],
+    "patterns_sample": [
+      "What is the latest placement percentage?",
+      "What is the highest package at SRKR?",
+      "How many recruiters visited SRKR?"
+    ]
+  },
+  "admissions": {
+    "tag": "admissions",
+    "category": "General",
+    "responses": [
+      "Check the official Admission Procedure and Admission Overview pages for current routes, eligibility and documents."
+    ],
+    "patterns_sample": [
+      "How can I get admission to SRKR?",
+      "What is the admission procedure?",
+      "Where is the admission brochure?"
+    ]
+  },
+  "fees": {
+    "tag": "fees",
+    "category": "General",
+    "responses": [
+      "Use the official fee structure for current tuition and other charges. Hostel and transport charges should be confirmed with their respective offices."
+    ],
+    "patterns_sample": [
+      "What is the B.Tech fee?",
+      "Where can I find college fees?",
+      "What is the current fee structure?"
+    ]
+  },
+  "exams": {
+    "tag": "exams",
+    "category": "General",
+    "responses": [
+      "The college website links to the SRKR examinations portal at srkrexams.in. Check it for current notices, timetables and results."
+    ],
+    "patterns_sample": [
+      "Where can I check exam timetable?",
+      "Where are SRKR results published?",
+      "What is the examination portal?"
+    ]
+  },
+  "academic_calendar": {
+    "tag": "academic_calendar",
+    "category": "General",
+    "responses": [
+      "Use the official Academic Calendar page for your programme and academic year. Dates should not be guessed."
+    ],
+    "patterns_sample": [
+      "Where is the academic calendar?",
+      "When does the semester start?",
+      "Where can I check holidays?"
+    ]
+  },
+  "research": {
+    "tag": "research",
+    "category": "General",
+    "responses": [
+      "The official website lists Research & Development, IPR, IIC, Centres of Excellence, research resources, projects, publications and patents."
+    ],
+    "patterns_sample": [
+      "Does SRKR have research facilities?",
+      "What research centres are available?",
+      "How can I contact the R&D cell?"
+    ]
+  },
+  "clubs": {
+    "tag": "clubs",
+    "category": "General",
+    "responses": [
+      "Check the official Student Clubs section and contact Student Affairs for current club membership and event details."
+    ],
+    "patterns_sample": [
+      "What student clubs are there?",
+      "How can I join a club?",
+      "Where can I see college events?"
+    ]
+  },
+  "sports": {
+    "tag": "sports",
+    "category": "General",
+    "responses": [
+      "The official site has a Sports section; the hostel page mentions playground, gymnasium and indoor games."
+    ],
+    "patterns_sample": [
+      "What sports facilities are available?",
+      "Does SRKR have a playground?",
+      "Can hostel students use gym facilities?"
+    ]
+  },
+  "wellbeing": {
+    "tag": "wellbeing",
+    "category": "General",
+    "responses": [
+      "SRKR has a Well-Being section. Use the official college support channels for current contacts and confidential assistance."
+    ],
+    "patterns_sample": [
+      "Is student counselling available?",
+      "Where can I get student support?",
+      "Who should I contact for wellbeing support?"
+    ]
+  },
+  "anti_ragging": {
+    "tag": "anti_ragging",
+    "category": "General",
+    "responses": [
+      "SRKR states a no-ragging ethos. For official reporting channels and current committee contacts, use the college policies/committees pages or contact administration."
+    ],
+    "patterns_sample": [
+      "What should I do if ragging happens?",
+      "Does SRKR have anti-ragging rules?",
+      "How do I report ragging?"
+    ]
+  },
+  "ece_labs": {
+    "tag": "ece_labs",
+    "category": "General",
+    "responses": [
+      "The ECE facilities page lists eleven labs, including VLSI Design, Microwave & Antennas, IoT, DSP, communication and electronics labs."
+    ],
+    "patterns_sample": [
+      "What labs are in ECE?",
+      "Does ECE have an IoT lab?",
+      "Is there a VLSI lab at SRKR?"
+    ]
+  },
+  "general_contact": {
+    "tag": "general_contact",
+    "category": "General",
+    "responses": [
+      "The college website footer lists +91 9848823332 and info@srkrec.ac.in. For a specific service, use its dedicated office contact."
+    ],
+    "patterns_sample": [
+      "What is SRKR contact number?",
+      "Give me the college email address",
+      "How can I contact the college office?"
+    ]
+  },
+  "fallback": {
+    "tag": "fallback",
+    "category": "General",
+    "responses": [
+      "I could not verify that detail from the SRKR sources currently indexed. Please check the official college website or contact the relevant office."
+    ],
+    "patterns_sample": [
+      "Can you help me?",
+      "I have a question not listed here",
+      "I need information that is not available"
+    ]
+  }
+}
